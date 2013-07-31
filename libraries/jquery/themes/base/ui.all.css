@@ -1,0 +1,6 @@
+@import "ui.base.css";
+@import "ui.theme.css";
+
+div.ui-datepicker{
+ font-size:10px;
+}

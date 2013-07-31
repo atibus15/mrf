@@ -1,0 +1,173 @@
+
+.add-icon{
+    background-image:url(images/icons/add.png) !important;
+}
+.close-icon{
+	 background-image:url(images/icons/cross.gif) !important;
+}
+.remove-icon{
+    background-image:url(images/icons/delete.gif) !important;
+}
+
+.view-icon {
+    background-image: url(images/icons/application_view_list.png) !important;
+}
+
+.grid-icon{
+    background-image:url(images/icons/grid.png) !important;
+}
+
+.save-icon{
+    background-image:url(images/icons/save.gif) !important;
+}
+
+.history-icon{
+    background-image:url(images/icons/folder_go.png) !important;
+}
+.rewind-icon{
+    background-image:url(images/icons/control_rewind.png) !important;
+}
+
+.back-icon{
+    background-image:url(images/icons/back-icon.png) !important;
+}
+
+.next-icon{
+    background-image:url(images/icons/next-icon.png) !important;
+}
+
+.tab-icon{
+    background-image:url(images/icons/book.png) !important;
+}
+
+.evaluation-icon{
+    background-image:url(images/icons/evaluate2-icn.png) !important;
+}
+.evaluation2-icon{
+    background-image: url(images/icons/evaluate-icn.png) !important;
+}
+.redlist-icon{
+    background-image:url(images/icons/grid-icn.png) !important;
+}
+.greenrefresh-icon{
+    background-image:url(images/icons/refresh-icn.png) !important;
+}
+.search-icon{
+    background-image:url(images/icons/seach-icn.png) !important;
+}
+.submitapp-icon{
+    background-image:url(images/icons/application_start.png) !important;
+}
+
+.showfile-icon{
+    background-image:url(images/icons/show-icon.png) !important;
+}
+
+.pdf-icon{
+    background-image:url(images/icons/pdf-icon.png) !important;
+}
+
+.open-folder-icon{
+    background-image:url(images/icons/Open-icon.png) !important;
+}
+
+.submit-icon{
+    background-image:url(images/icons/application--plus.png) !important;
+}
+
+.employee-icon{
+    background-image:url(images/icons/user-business.png)!important;
+}
+
+.appraisal-icon{
+    background-image:url(images/icons/calendar-task.png) !important;
+}
+
+.exit-icon{
+    background-image:url(images/icons/cross.gif) !important;
+}
+
+.employeelist-icon{
+    background-image:url(images/icons/clipboard-task.png) !important;
+}
+
+.appraisal2-icon{
+    background-image:url(images/icons/chart--pencil.png)!important;
+}
+
+.rating-icon{
+    background-image:url(images/icons/chart-up-color.png)!important;
+}
+.print1-icon{
+    background-image:url(images/icons/zones.png)!important;
+}
+
+
+.key-icon{
+    background-image:url(images/icons/key.gif) !important;
+}
+.erase-icon{
+    background-image:url(images/icons/erase.png) !important;
+}
+
+.erase2-icon{
+    background-image:url(images/icons/eraser2.png) !important;
+}
+
+.update-icon{
+    background-image:url(images/icons/update-icon.gif) !important;
+}
+
+.file_upload{
+    background-image:url(images/icons/arrow-up.gif) !important;
+}
+
+.refresh{
+    background-image:url(images/icons/arrow_rotate_clockwise.png) !important;
+}
+
+.upload-btn-icon{
+    background-image:url(images/icons/application_start.png) !important;
+}
+
+.submitapp-icon{
+    background-image:url(images/icons/application_start.png) !important;
+}
+
+.calculate-icon{
+    background-image:url(images/icons/calculateme.png) !important;
+}
+.notify1-icon{
+    background-image:url(images/icons/notify1.png) !important;
+}
+.money-icon{
+    background-image:url(images/icons/table-money.png) !important;
+}
+.printme-icon{
+    background-image:url(images/icons/printer2.png) !important;
+}
+.send-icon{
+    background-image:url(images/icons/folder_go.png) !important;
+}
+.refresh-icn{
+    background-image:url(images/icons/ref2.png) !important;
+}
+.sss-icn{
+    background-image:url(images/icons/social-icon.png) !important;
+}
+.comaker-icon{
+    background-image:url(images/icons/user-pencil.png) !important;
+}
+.approve-icon{
+    background-image:url(images/icons/approved.png) !important;
+}
+.disapprove-icon{
+    background-image:url(images/icons/disapproved.png) !important;
+}
+
+
+
+/*ALIGNMENT CLASSESS*/
+
+.align-right{text-align: right;}
+.align-left{text-align: left;}

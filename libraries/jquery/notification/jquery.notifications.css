@@ -1,0 +1,16 @@
+/* jQuery Notifications plugin - http://programmingmind.com */
+/* notification container */
+#jquery-notifications {z-index:1;position:fixed;margin-bottom:0px;width: 100%; left: 0%; /*top: 08*/bottom:0%;text-align:left;font-family:tahoma,arial,helvetica,sans-serif;font-size:1em;font-weight:bold;}
+/* common style properties for all the notification messages */
+#jquery-notifications div.notice, #jquery-notifications div.success, #jquery-notifications div.warning, #jquery-notifications div.error {margin: 0; padding: 5px; padding-left: 10px; border-top: 2px solid;text-indent:5px;font-size:.75em;}
+#jquery-notifications div.notice {background:#6C9FFC; /*color:#061A72;*/color:white;border-color:#061A72;/*font-family:"Verdana";font-weight:bold8*/}
+#jquery-notifications div.success {/*background:#96F96F;color:#045419;*/background:#097004;color:white;border-color:#045419;/*font-family:"Verdana";font-weight:bold*/}
+#jquery-notifications div.success #n-image{float:left;width:17px;height:15px;background-image: url(../../../styles/images/icons/accept.png);background-repeat:no-repeat;}
+
+#jquery-notifications div.warning {/*background:#F7AE57;color:#753903;background:#006295*/background-color:#024769;color:white;border-color:#2B3E42;/*font-family:"Verdana";font-weight:bold*/}
+#jquery-notifications div.warning #n-image{float:left;width:17px;height:15px;background-image: url(../../../styles/images/icons/error.png);background-repeat:no-repeat;}
+
+#jquery-notifications div.error {/*background:#F97C6F;*/background:#7e160b;/*color:#570F01;*/color:white;border-color:#570F01;/*font-family:"Verdana";font-weight:bold8*/}
+#jquery-notifications div.error #n-image{float:left;width:16px;height:15px;background-image: url(../../../styles/images/icons/delete.gif);background-repeat:no-repeat;}
+/* style property for the close text */
+#jquery-notifications div > a {position:absolute;right: 0; margin-right:10px; color: #000000; text-decoration:none; border: 1px solid black; padding-right: 5px; padding-left: 5px}
