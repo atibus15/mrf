@@ -10,7 +10,7 @@
             <div id="request-form-container">
                 <?php
                     // dont forget to remove me. 
-                    // print_r($_SESSION); 
+                    print_r($_SESSION); 
                 ?>
             </div>
         </div>

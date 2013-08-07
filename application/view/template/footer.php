@@ -2,7 +2,7 @@
 
 
             <div class="row-fluid footer" id="footer">
-                <p class="copyright"><center>&copy;Siy Cha Group of Companies. All right reserved. 2013</center></p>
+                <p class="copyright"><center>&copy;<?=PAGE_FOOTER_TEXT?></center></p>
             </div>
         </div>
 

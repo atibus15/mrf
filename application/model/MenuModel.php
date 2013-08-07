@@ -10,28 +10,27 @@ if(!defined('ROOT_DIR'))exit('Direct access not allowed..');
 
 class MenuModel extends Model
 {
-    private $user_role_str;
+    private $user_role_tims;
 
     public function __construct()
     {
         $this->result['success'] = false;
         parent::__construct();
 
-        $user_role_codes = userSession('roles');
+        $this->user_roleid_tims = userSession('roleidtims');
 
-        $this->user_role_str = "'".implode("','", $user_role_codes)."'";
-
-        $this->db = $this->load->database('FINANCEDB');
+        $this->db = $this->load->database('HRMSDB');
 
         $this->db->setTrans(IBASE_READ);
     }
 
-    public function fetchMainMenus()
+    // set MENU_NAME constant in /config/constant.php
+    private function fetchMainMenus()
     {
-        $query = "SELECT DISTINCT mm.MENUID, mm.CAPTION, mm.ITEMLINK, mm.ITEMPAGE, mm.ITEMACTION FROM ADROLEMENU rm
-                    inner join ADMENUMAST2 mm on rm.MENUID = mm.MENUID
-                    WHERE rm.ROLECODE IN ({$this->user_role_str}) 
-                    AND mm.ISACTIVE = 1 AND mm.ITEMNAME LIKE 'ereq%' AND mm.MENUGROUP = 0";
+        $query  =   "SELECT mm.MENUID, mm.MENUGROUP, mm.CAPTION, mm.ITEMPAGE, mm.ITEMACTION, rm.ROLEID FROM ADROLEMENU rm
+                    JOIN ADMENUMAST mm ON mm.MENUID = rm.MENUID
+                    WHERE rm.ROLEID = $this->user_roleid_tims  and mm.ITEMNAME like '".MENU_NAME."%' AND ITEMLEVEL = 1 AND mm.ISACTIVE = 1
+                    ORDER BY mm.MENUID";
 
         $this->db->prepare($query);
 
@@ -41,13 +40,13 @@ class MenuModel extends Model
 
         return $main_menus;
     }
-
-    public function fetchSubMenus($menugroup)
+    // set MENU_NAME constant in /config/constant.php
+    private function fetchSubMenus($menugroup)
     {
-        $query = "SELECT DISTINCT mm.MENUID, mm.CAPTION, mm.ITEMLINK, mm.ITEMPAGE, mm.ITEMACTION FROM ADROLEMENU rm
-                    inner join ADMENUMAST2 mm on rm.MENUID = mm.MENUID
-                    WHERE rm.ROLECODE IN ({$this->user_role_str}) 
-                    AND mm.ISACTIVE = 1 AND mm.ITEMNAME LIKE 'ereq%' AND mm.MENUGROUP=?";
+        $query = "SELECT mm.MENUID, mm.MENUGROUP, mm.CAPTION, mm.ITEMPAGE, mm.ITEMACTION,rm.ROLEID FROM ADROLEMENU rm
+                    JOIN ADMENUMAST mm ON mm.MENUID = rm.MENUID
+                    WHERE rm.ROLEID = $this->user_roleid_tims and mm.ITEMNAME like '".MENU_NAME."%' AND ITEMLEVEL = 2 AND mm.ISACTIVE = 1 AND mm.MENUGROUP = ?
+                    ORDER BY mm.MENUID";
 
         $this->db->prepare($query);
 

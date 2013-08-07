@@ -3,8 +3,11 @@
  * @Author  : atibus
  * @Date    : 07/12/2013
  * @Desc    : Constant Variables;
- **/ 
-
+ **/
+    
+    DEFINE('SYSTEM_TITLE','Manpower Requisition');
+    DEFINE('PAGE_FOOTER_TEXT','Siy Cha Group of Companies. All right reserved. 2013');
+    DEFINE('MENU_NAME','MRF');
     // @DEFAULT_PAGE
     // default controller if the url page=undefined
     DEFINE('DEFAULT_PAGE','User'); 
@@ -12,7 +15,6 @@
     // @DEFAULT_ACTION
     // default method to execute if action not define in the url;
     // this must be inside the DEFAULT CONTROLLER
-
     DEFINE('DEFAULT_ACTION','homepage'); 
 
     DEFINE('APPS_DIR',  ROOT_DIR. "/application/");

@@ -1,5 +1,5 @@
 <?php
-
+if(!defined('ROOT_DIR'))exit('Direct access not allowed..');
 class ErrorPage extends ActionController
 {
     public function __construct()

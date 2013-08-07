@@ -28,9 +28,11 @@ class Employee extends ActionController
             $this->empmodel = $this->load->model('EmployeeModel');
 
             $emp_details = $this->empmodel->fetchEmployeeDetailsByBadgeNo($badgeno);
+
             if(!$emp_details)
             {
-                runtimeException('Invalid Badge No.',1);
+                $this->ajax_result['errormsg'] = "Invalid Badge No.";
+                exit($this->buildJson( $this->ajax_result ));
             }
             
             $this->ajax_result['success'] = true;

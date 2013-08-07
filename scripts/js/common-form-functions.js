@@ -1,3 +1,7 @@
+//author: atibus
+//date :07/19/2013
+//IDE :sublime text 2
+//control + alt + shift + m to minify script if doesnt work download jsminifier.
 Ext.require(['Ext.data.*']);
 
 
@@ -24,8 +28,13 @@ position_desc   = Ext.get('positiondesc').getValue(),
 branch          = Ext.get('branchdesc').getValue(),
 department_desc = Ext.get('departmentdesc').getValue();
 
-_today = Ext.Date.format(new Date(),'m/d/Y');
+_today          = Ext.Date.format(new Date(),'m/d/Y');
 
+_fdom           = Ext.Date.getFirstDateOfMonth(new Date());
+_ldom           = Ext.Date.getLastDateOfMonth(new Date());
+
+_first_date_month= Ext.Date.format(_fdom, 'm/d/Y');
+_last_date_month = Ext.Date.format(_ldom,'m/d/Y');
 
 Ext.define('Dropdown',
 {
@@ -35,15 +44,23 @@ Ext.define('Dropdown',
 
 
 
-function dropDownStore(appcode, subappcode)
+function dropDownStore(action,app_code, sub_code)
 {
+    Ext.Ajax.on('requestcomplete',function(success, result){
+        var response = Ext.JSON.decode(result.responseText);
+        if(!response.success)
+        {
+            messageBox(response.errormsg);
+        }
+    });
+
     return Ext.create('Ext.data.ArrayStore',
     {
         model:'Dropdown',
         proxy :
         {
             type:'ajax',
-            url:'?_page=lookUp&_action=getGenDtl&appcode='+appcode+'&subappcode='+subappcode,
+            url:'?_page=lookUp&_action='+action+'&app_code='+app_code+'&sub_code='+sub_code,
             reader:{root:'data'}
         },
         autoLoad:false
@@ -51,25 +68,93 @@ function dropDownStore(appcode, subappcode)
 }
 
 
-function requestTypeStore()
+
+function getJobDescriptions(position_code)
 {
-    return Ext.create('Ext.data.ArrayStore',
+    var wait_box = Ext.Msg.wait('Loading Job Description...','e-MRF');
+
+    var request = $.ajax({
+        url:'?_page=lookUp&_action=getjobdescriptions',
+        method:'post',
+        async:false,
+        data:{
+            position_code:position_code
+        },
+        success:function()
+        {
+            wait_box.hide();
+        },
+        failure:function()
+        {
+            wait_box.hide();
+        }
+    });
+
+    var response = $.parseJSON(request.responseText);
+
+    if(!response.success)
+    {
+        messageBox(response.errormsg);
+        return false;
+    }
+    
+    return response.data;
+}
+
+
+// not asyncronous enable auto suggest on dropdown if typeAhead
+function positionStore()
+{
+    var request = $.ajax({
+        url:'?_page=lookUp&_action=getpositions',
+        method:'post',
+        async:false
+    });
+
+    var response = $.parseJSON(request.responseText);
+
+    if(!response.success)
+    {
+        messageBox(response.errormsg);
+        return false;
+    }
+    
+    return Ext.create('Ext.data.Store',
     {
         model:'Dropdown',
-        proxy:
-        {
-            type:'ajax',
-            url:'?_page=lookUp&_action=getRequestTypes',
-            reader:{root:'data'}
-        },
-        autoLoad:false
+        data:response.data,
+        autoLoad:true
     });
 }
+
+function departmentStore()
+{
+    var request = $.ajax({
+        url:'?_page=lookUp&_action=getdepartments',
+        method:'post',
+        async:false
+    });
+
+    var response = $.parseJSON(request.responseText);
+
+    if(!response.success)
+    {
+        messageBox(response.errormsg);
+        return false;
+    }
+    
+    return Ext.create('Ext.data.Store',
+    {
+        model:'Dropdown',
+        data:response.data,
+        autoLoad:true
+    });
+}
+
 
 function getEmployeeDetails(badge_no)
 {
-    var wait_box = Ext.Msg.wait('Loading Employee Info...','e-Request');
-
+    var wait_box = Ext.Msg.wait('Loading Employee Info...','e-MRF');
 
     var request = $.ajax({
         url:'?_page=employee&_action=getEmployeeDetails',
@@ -97,49 +182,6 @@ function getEmployeeDetails(badge_no)
     }
     
     return response;
-}
-
-function getLastRequestDate(request_code,item_code)
-{
-    var wait_box = Ext.Msg.wait('Getting last request date...','e-Request');
-
-    var request = $.ajax({
-        url:'?_page=lookUp&_action=getLastRequestDate',
-        method:'post',
-        async:false,
-        data:{
-            requestcode : request_code,
-            itemcode   : item_code
-        },
-        success:function()
-        {
-            wait_box.hide();
-        },
-        failure:function()
-        {
-            wait_box.hide();
-        }
-    });
-
-    var response = $.parseJSON(request.responseText);
-    if(!response.success)
-    {
-        messageBox(response.errormsg);
-        return false;
-    }
-
-    return response.last_request_date;
-}
-
-
-function fillFormValue()
-{
-
-    setCmpValue('requestor_branch_code', branchcode);
-    setCmpValue('requestor_branch', branch);
-    setCmpValue('requestor_badge_no', badgeno);
-    setCmpValue('requestor_name', fullname);
-    setCmpValue('requestor_position', position_desc);
 }
 
 Ext.define('MY.custom.TextField',
@@ -180,6 +222,7 @@ function submitRequestForm(module_method)
     })
     if(first_invalid_field)
     {
+        first_invalid_field.fireEvent('mouseover');
         first_invalid_field.focus();
         return false;
     }
@@ -189,29 +232,29 @@ function submitRequestForm(module_method)
     {
 
         form.submit({
-            url:'?_page=RequestFile&_action='+module_method,
+            url:'?_page=request&_action='+module_method,
             method:'POST',
             waitMsg:'Sending request...',
             success:function(form, action)
             {
-                Ext.Msg.alert('e-Request', action.result.message,function(){window.location = '?_page=user&_action=homepage';});
+                Ext.Msg.alert('MRF', action.result.message,function(){window.location = '?_page=user&_action=homepage';});
             },
             failure:function(form, action)
             {
-                Ext.Msg.alert('e-Request', action.result.errormsg);
+                Ext.Msg.alert('MRF', action.result.errormsg);
             }
         });
     }
 }
 
-var submit_btn = 
+submit_btn = 
 {
     text:'Submit',
-    id : 'submit-btn',
+    id : 'submit_btn',
     iconCls:'submit-icon'
 };
 
-var clear_btn =
+clear_btn =
 {
     text:'Clear',
     id:'clear_btn',
@@ -222,7 +265,7 @@ var clear_btn =
     }
 };
 
-var cancel_btn =
+cancel_btn =
 {
     text:'Cancel',
     id:'cancel_btn',
@@ -233,25 +276,25 @@ var cancel_btn =
     }
 };
 
-var approve_btn =
+approve_btn =
 {
     text: 'Approved',
-    id :'approve-btn',
+    id :'approve_btn',
     name:'approve',
     iconCls:'approve-icon'
 };
 
-var disapprove_btn =
+disapprove_btn =
 {
     text: 'Disapproved',
     name:'disapprove',
     id :'disapprove_btn',
     iconCls:'disapprove-icon'
 };
-var back_btn =
+back_btn =
 {
     text:'Back to List',
-    id:'back-btn',
+    id:'back_btn',
     name:'back',
     iconCls:'back-icon'  
 };

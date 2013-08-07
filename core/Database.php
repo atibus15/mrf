@@ -34,6 +34,8 @@ class Database
         $this->connected = false;
         $this->dbkey = $db_key;
         $this->connect();
+
+        include_once UTI_HELPER.'output_sanitizer.php';
     }
 
     //modified by atibus fix unset configuration error.. undeclare variable kunkunana nukua.
@@ -138,7 +140,7 @@ class Database
             $params = array();
             foreach($data as $key => $value)
             {
-                $params[$key] = '$data['.$key.']';
+                $params[$key] = (trim($data[$key])!='') ? '$data['.$key.']' : 'NULL';
             }
 
             eval('$this->query_result=ibase_execute($this->prepared_query,'.join(',',$params).');'); 
@@ -176,9 +178,9 @@ class Database
     {
         $ibase_row_arr = array();
 
-        while($row = ibase_fetch_assoc($this->query_result))
+        while($row = ibase_fetch_assoc($this->query_result,IBASE_TEXT))
         {
-            $ibase_row_arr[] = $row;
+            $ibase_row_arr[] = sanitizeOutput($row);
         }
 
         return $ibase_row_arr;

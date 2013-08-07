@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>e-Request.- login</title>
-        <link rel="SHORTCUT ICON" href="./styles/images/icons/coins-icon.png"/>
+        <title><?=SYSTEM_TITLE?></title>
+        <link rel="SHORTCUT ICON" href="./styles/images/icons/apply-icon.png"/>
         <link rel="stylesheet" type="text/css" href="./libraries/ext-4/resources/css/ext-all-scoped.css">
         <link rel="stylesheet" type="text/css" href="./libraries/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="./libraries/bootstrap/css/bootstrap-responsive.css">
@@ -23,7 +23,7 @@
         <div class="container">
  
           <form class="form-signin" autocomplete="off">
-            <h2 class="form-signin-heading">e-Request Login</h2>
+            <h4 class="form-signin-heading">Manpower Requisition Login</h4>
             <div class="control-group">
                 <label class="control-label" for="username">Username:</label>
                 <div class="controls">

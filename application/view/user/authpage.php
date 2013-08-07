@@ -6,6 +6,7 @@
         <title>e-Request.- Reauthentication</title>
         <link rel="SHORTCUT ICON" href="./styles/images/icons/coins-icon.png"/>
         <link rel="stylesheet" type="text/css" href="./libraries/ext-4/resources/css/ext-all-scoped.css">
+        <link rel="stylesheet" type="text/css" href="./libraries/bootstrap/css/bootstrap.css">
         <?php
             if($this->loaded_css)
             {

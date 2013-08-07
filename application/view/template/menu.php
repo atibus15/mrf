@@ -33,7 +33,7 @@
           </ul>
           <p class="pull-right" id="greeting">
               <?php
-                  if(userSession('erequest')){
+                  if(userSession('mrf')){
                     echo 'Welcome! '.userSession('userid');
                     echo '&nbsp; <a href="?_page=user&_action=logout">Logout</a>';
                   }

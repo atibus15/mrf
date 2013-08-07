@@ -37,9 +37,8 @@ function messageRedirect(text,location,icon){
         icon = Ext.MessageBox.INFO;
     }
     Ext.MessageBox.show({
-        title   : 'e-Request',
+        title   : 'e-MRF',
         msg     : text,
-        width   : 300,
         buttons : Ext.MessageBox.OK,
         icon    : icon,
         animEl  : document.body,

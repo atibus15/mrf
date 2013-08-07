@@ -34,7 +34,7 @@ if(!function_exists('setUserSession()'))
 {
     function setUserSession($key, $value)
     {
-        $_SESSION[$key] = $value;
+        $_SESSION[$key] = (!array($value)) ? trim($value) : $value;
     }
 }
 

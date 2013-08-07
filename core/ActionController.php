@@ -89,9 +89,18 @@ abstract class ActionController extends Controller{
         return $this->action;
     }
     
-    public function buildJson($params)
+    protected function buildJson($params)
     {
        return json_encode($params);
+    }
+
+    protected function isAjaxRequest()
+    {
+        if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) and strtolower($_SERVER['HTTP_X_REQUESTED_WITH'])=='xmlhttprequest')
+        {
+            return true;
+        }
+        return false;
     }
 
     public function dispatchAction()
@@ -102,6 +111,18 @@ abstract class ActionController extends Controller{
             exit("Page not found!");
         }
         $this->$method();
+    }
+
+    protected function checkUserPrivilege()
+    {
+        $user_module = unserialize(userSession('serialized_user_module'));
+
+        $request_module = $this->getName().get_post('_action');
+
+        if(!in_array($request_module, $user_module))
+        {
+            $this->forward('ErrorPage', 'forbidden'); exit;
+        }
     }
 }
 ?>

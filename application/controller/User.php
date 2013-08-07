@@ -15,6 +15,8 @@ class User extends ActionController
         parent::__construct();
         $this->ajax_result['success'] = false;
         $this->load->helper('output_sanitizer');
+
+        $this->employeemodel = $this->load->model('EmployeeModel');
     }
 
     public function execLogout()
@@ -25,31 +27,16 @@ class User extends ActionController
 
     public function execLoginpage()
     {
+        if(userSession('mrf')){$this->forward('user','homepage'); exit;}
         $this->load->css('login-style');
         $this->load->js('libraries/ext-4/ext-all');
-        $this->load->js('scripts/js/login');
+        $this->load->js('scripts/js/login.min');
         $this->load->view('user/login');
-    }
-
-   public function execAuthPage()
-    {
-        $this->load->css('login-style');
-        $this->load->js('libraries/ext-4/ext-all');
-        $this->load->js('scripts/js/authenticate-user');
-        $this->load->view('user/authpage');
     }
 
     public function execHomepage()
     {
-        if(userSession('bimsaccount') and !userSession('erequest'))
-        {
-            $this->forward('user','authPage'); exit; 
-        }
-
-        if(!userSession('bimsaccount') and !userSession('erequest'))
-        {
-            $this->forward('user','loginpage'); exit;
-        }
+        if(!userSession('mrf')){$this->forward('user','loginpage'); exit;}
 
         if(!userSession('serialized_user_menu'))
         {
@@ -58,7 +45,6 @@ class User extends ActionController
         }
 
         $this->load->completeView('user/homepage');
-
     }
 
     // use in erequest login modoule
@@ -71,9 +57,8 @@ class User extends ActionController
         {   
             if($this->isFormValid())
             {
-                $this->usermodel = $this->load->model('UserModel');
 
-                $user_account = $this->usermodel->getUserAccount($this->username);
+                $user_account = $this->employeemodel->getUserAccount($this->username);
 
                 if(!$user_account)
                 {
@@ -96,16 +81,9 @@ class User extends ActionController
 
                     $emp_badge_no = $user_account->BADGENO;
 
-                    $this->employeemodel = $this->load->model('EmployeeModel');
-
                     $user_details = $this->employeemodel->fetchEmployeeDetailsByBadgeNo($emp_badge_no);
-
-                    $rolecodes = $this->usermodel->getArrayCompiledRoleCode($this->username);
-
-                    $user_details->roles = sanitizeOutput($rolecodes);
-
-                    $user_details->USERID = $user_account->USERID;
-
+                    $user_details->USERID = $this->username;
+                    
                     $this->setUserSession($user_details);
 
                     $this->ajax_result['success'] = true;
@@ -123,47 +101,11 @@ class User extends ActionController
 
 
 
-    // authenticate user that already logged-in in other finance system.
-    public function execAuthLoggedinUser()
-    {
-        $username = userSession('bimsaccount');
-        $badge_no = userSession('badgeno');
-        try
-        {
-            $this->employeemodel = $this->load->model('EmployeeModel');
-            $this->usermodel = $this->load->model('UserModel');
-
-            $user_details = $this->employeemodel->fetchEmployeeDetails($badge_no);
-
-            $rolecodes = $this->usermodel->getArrayCompiledRoleCode($this->username);
-
-            $user_details->roles = sanitizeOutput($rolecodes);
-
-            $user_details->USERID = $username;
-
-            $this->setUserSession($user_details);
-
-            $this->ajax_result['success'] = true;
-
-            $this->ajax_result['page']['redirect'] = '?_page=user&_action=homepage'; 
-        }
-        catch(Exception $e)
-        {
-            $this->ajax_result['errormsg'] = $e->getMessage();
-        }
-        echo json_encode($this->ajax_result);
-    }
-
-
-
     private function setUserSession($user_details=array())
     {
         if($user_details)
         {
-            // for other system .. bims/mcrp/sop etc
-            setUserSession('bimsaccount',   $user_details->USERID);
-            setUserSession('badgeno',       $user_details->BADGENO);
-            setUserSession('erequest',      true);
+            setUserSession('mrf',true);
             
             foreach($user_details as $key => $value)
             {

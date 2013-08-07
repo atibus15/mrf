@@ -1,0 +1,1433 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fo",
+				"formatted_job_desc"
+			],
+			[
+				"pos",
+				"position_code"
+			],
+			[
+				"po",
+				"position_code"
+			],
+			[
+				"pre",
+				"prepare"
+			],
+			[
+				"val",
+				"valueField"
+			],
+			[
+				"di",
+				"displayField"
+			],
+			[
+				"get",
+				"getgenericlookup"
+			],
+			[
+				"mes",
+				"messageBox"
+			],
+			[
+				"resp",
+				"responseText"
+			],
+			[
+				"sub",
+				"sub_code"
+			],
+			[
+				"respo",
+				"responseText"
+			],
+			[
+				"st",
+				"style"
+			],
+			[
+				"l",
+				"layout"
+			],
+			[
+				"rep",
+				"replacement_combo"
+			],
+			[
+				"fie",
+				"fieldLabel"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"fir",
+				"first_invalid_field"
+			],
+			[
+				"request",
+				"request_list"
+			],
+			[
+				"ag",
+				"age_to"
+			],
+			[
+				"ma",
+				"machine_skill"
+			],
+			[
+				"req",
+				"required_skills"
+			],
+			[
+				"con",
+				"contract_to"
+			],
+			[
+				"em",
+				"employment_status"
+			],
+			[
+				"tem",
+				"temporary_rank"
+			],
+			[
+				"per",
+				"permanent_rank"
+			],
+			[
+				"ju",
+				"justification_file"
+			],
+			[
+				"ex",
+				"extended_leave_reason"
+			],
+			[
+				"leav",
+				"leave_to"
+			],
+			[
+				"emp",
+				"employee_position"
+			],
+			[
+				"re",
+				"replacement_for"
+			],
+			[
+				"ro",
+				"rollback"
+			],
+			[
+				"defi",
+				"defined"
+			],
+			[
+				"my",
+				"my_val"
+			],
+			[
+				"position_de",
+				"position_detail_panel"
+			],
+			[
+				"perm",
+				"permanent_position_fieldset"
+			],
+			[
+				"request_",
+				"request_form"
+			],
+			[
+				"wi",
+				"within_platilla"
+			],
+			[
+				"in",
+				"inputValue"
+			],
+			[
+				"ME",
+				"MENUID"
+			],
+			[
+				"requ",
+				"request_code"
+			],
+			[
+				"reque",
+				"request_list_len"
+			],
+			[
+				"tr",
+				"tr_level"
+			],
+			[
+				"pro",
+				"proxy"
+			],
+			[
+				"up",
+				"uploader"
+			],
+			[
+				"error",
+				"errormsg"
+			],
+			[
+				"rol",
+				"rollbackRequest"
+			],
+			[
+				"requestm",
+				"requestmodel"
+			],
+			[
+				"upl",
+				"uploaded"
+			],
+			[
+				"erro",
+				"error_msg"
+			],
+			[
+				"new_d",
+				"new_dir"
+			],
+			[
+				"item",
+				"item_len"
+			],
+			[
+				"vali",
+				"validateData"
+			],
+			[
+				"header",
+				"header_details"
+			],
+			[
+				"collect",
+				"collectFRMDtls"
+			],
+			[
+				"su",
+				"sub_code"
+			],
+			[
+				"app",
+				"app_code"
+			],
+			[
+				"current",
+				"current_id"
+			],
+			[
+				"curr",
+				"current_id"
+			],
+			[
+				"cu",
+				"current_id"
+			],
+			[
+				"appro",
+				"approved_date"
+			],
+			[
+				"agre",
+				"agreement_name"
+			],
+			[
+				"ERQ_",
+				"ERQ_RES"
+			],
+			[
+				"dir",
+				"dirty_money_str"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"newf",
+				"new_filename"
+			],
+			[
+				"getD",
+				"getNewDirectory"
+			],
+			[
+				"new_fi",
+				"new_file_path"
+			],
+			[
+				"create",
+				"createNewDirectory"
+			],
+			[
+				"new_dire",
+				"new_directory_path"
+			],
+			[
+				"new_di",
+				"new_directory"
+			],
+			[
+				"la",
+				"labelWidth"
+			],
+			[
+				"a",
+				"approver_position"
+			],
+			[
+				"ap",
+				"approver_name"
+			],
+			[
+				"approve",
+				"approver_badgeno"
+			],
+			[
+				"de",
+				"defaultType"
+			],
+			[
+				"getF",
+				"getFileRequirements"
+			],
+			[
+				"ERQ",
+				"ERQ_RM"
+			],
+			[
+				"ER",
+				"ERQ_FL"
+			],
+			[
+				"r_m_",
+				"r_m_items"
+			],
+			[
+				"item_",
+				"item_number"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"last",
+				"last_request_date"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"ERE",
+				"EREQUESTID"
+			],
+			[
+				"veri",
+				"verifier_name"
+			],
+			[
+				"reco",
+				"recommend_position"
+			],
+			[
+				"rec",
+				"recommend_position"
+			],
+			[
+				"ver",
+				"verifier_position"
+			],
+			[
+				"wai",
+				"wait_box"
+			],
+			[
+				"fi",
+				"fieldStyle"
+			],
+			[
+				"items",
+				"items_grand_total_price"
+			],
+			[
+				"forma",
+				"formatted_value"
+			],
+			[
+				"num",
+				"numberFormat"
+			],
+			[
+				"dec",
+				"decimalSeparator"
+			],
+			[
+				"allo",
+				"allowBlank"
+			],
+			[
+				"require",
+				"requirements"
+			],
+			[
+				"lo",
+				"lookupmodel"
+			],
+			[
+				"cal",
+				"calculateGrandTotal"
+			],
+			[
+				"store2_item",
+				"store2_item_price"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"store2_",
+				"store2_item_total_price"
+			],
+			[
+				"stor",
+				"store2_item_unit_price_val"
+			],
+			[
+				"pci",
+				"pci_item_sub_total_cmp"
+			],
+			[
+				"qu",
+				"quantity_value"
+			],
+			[
+				"pci_",
+				"pci_item_price_val"
+			],
+			[
+				"pci_item",
+				"pci_item_price_cmp"
+			],
+			[
+				"STO",
+				"STORE3-UNITPRICE"
+			],
+			[
+				"PC",
+				"PCI-UNITPRICE"
+			],
+			[
+				"cure",
+				"current_row_panel"
+			],
+			[
+				"store",
+				"store3_item_sub_total"
+			],
+			[
+				"pc",
+				"pci_item_sub_total"
+			],
+			[
+				"store2",
+				"store2_item_sub_total"
+			],
+			[
+				"new",
+				"new_request_row"
+			],
+			[
+				"pci_i",
+				"pci_item_sub_total"
+			],
+			[
+				"text",
+				"textfield"
+			],
+			[
+				"request_d",
+				"request_detail_panel"
+			],
+			[
+				"item_b",
+				"item_brand"
+			],
+			[
+				"store1_",
+				"store1_item_price"
+			],
+			[
+				"las",
+				"last_request_date"
+			],
+			[
+				"ite",
+				"item_brand"
+			],
+			[
+				"item_bra",
+				"item_brand_cmp"
+			],
+			[
+				"item_qu",
+				"item_quantity_cmp"
+			],
+			[
+				"so",
+				"store1_item_price"
+			],
+			[
+				"pci_it",
+				"pci_item_total_price"
+			],
+			[
+				"getC",
+				"getComponent"
+			],
+			[
+				"m",
+				"make"
+			],
+			[
+				"sc",
+				"scripts"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "scripts/js/manpower.js",
+			"settings":
+			{
+				"buffer_size": 17659,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scripts/js/manpower.min.js",
+			"settings":
+			{
+				"buffer_size": 7809,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/model/RequestModel.php",
+			"settings":
+			{
+				"buffer_size": 2112,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controller/User.php",
+			"settings":
+			{
+				"buffer_size": 4677,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controller/Request.php",
+			"settings":
+			{
+				"buffer_size": 4155,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scripts/js/request-processing.js",
+			"settings":
+			{
+				"buffer_size": 4148,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scripts/js/common-form-functions.js",
+			"settings":
+			{
+				"buffer_size": 4908,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scripts/js/common-form-functions.min.js",
+			"settings":
+			{
+				"buffer_size": 3477,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "styles/application.css",
+			"settings":
+			{
+				"buffer_size": 3983,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "core/ActionController.php",
+			"settings":
+			{
+				"buffer_size": 3093,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/model/LookUpModel.php",
+			"settings":
+			{
+				"buffer_size": 1944,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controller/LookUp.php",
+			"settings":
+			{
+				"buffer_size": 6220,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controller/ErrorPage.php",
+			"settings":
+			{
+				"buffer_size": 283,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"P",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 283.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/var/www/mrf/scripts/js/login.min.js",
+		"/var/www/mrf/scripts/js/common-form-functions.min.js",
+		"/var/www/mrf/scripts/js/common-form-functions.js",
+		"/var/www/mrf/application/view/user/authpage.php",
+		"/var/www/mrf/application/model/UserModel.php",
+		"/var/www/erequest/application/view/template/header.php",
+		"/var/www/erequest/index.php",
+		"/var/www/erequest/application/controller/Request.php",
+		"/var/www/erequest/application/model/LookUpModel.php",
+		"/var/www/erequest/application/controller/LookUp.php",
+		"/var/www/erequest/scripts/js/common-form-functions.js",
+		"/var/www/erequest/application/view/request/processing.php",
+		"/var/www/erequest/application/controller/RequestFile.php",
+		"/var/www/erequest/scripts/js/new-sales-agent.js",
+		"/var/www/erequest/scripts/js/pre-termination.js",
+		"/var/www/erequest/scripts/js/repair-maintenance.js",
+		"/var/www/erequest/scripts/js/reschedule.js",
+		"/var/www/erequest/scripts/js/docu-requisition.js",
+		"/var/www/erequest/scripts/js/fuel-lubricant.js",
+		"/var/www/erequest/core/ActionController.php",
+		"/var/www/erequest/scripts/js/accountable-forms.js",
+		"/var/www/erequest/application/model/RequestModel.php",
+		"/var/www/erequest/libraries/Uploader.php",
+		"/var/www/erequest/application/controller/User.php",
+		"/var/www/erequest/application/controller/Employee.php",
+		"/var/www/erequest/application/controller/ErrorPage.php",
+		"/var/www/erequest/core/Controller.php",
+		"/var/www/erequest/scripts/js/request-form.js",
+		"/var/www/erequest/logs/error_logs.txt",
+		"/var/www/erequest/application/view/user/homepage.php",
+		"/var/www/erequest/helper/Logger.php",
+		"/var/www/erequest/config/constants.php",
+		"/var/www/erequest/core/Database.php",
+		"/var/www/erequest/application/model/EmployeeModel.php",
+		"/var/www/erequest/db_logs/database.log",
+		"/var/www/erequest/core/FrontController.php",
+		"/var/www/erequest/helper/sanitizer.php",
+		"/var/www/erequest/application/controller/Uploader.php",
+		"/var/www/erequest/scripts/js/common-buttons.js",
+		"/var/www/erequest/scripts/js/mc-request-inc.js",
+		"/var/www/erequest/helper/input_helper.php",
+		"/var/www/erequest/application/model/UserModel.php",
+		"/var/www/erequest/application/controller/RequestFiling.php",
+		"/var/www/erequest/scripts/js/login.js",
+		"/var/www/erequest/styles/application.css",
+		"/var/www/erequest/scripts/js/logout.js",
+		"/var/www/erequest/scripts/js/common.js",
+		"/var/www/erequest/scripts/js/dropdown-store.js",
+		"/var/www/erequest/application/controller/FuelLubricant.php",
+		"/var/www/erequest/scripts/js/request-processing.js",
+		"/var/www/erequest/application/view/template/menu.php",
+		"/var/www/erequest/application/model/ProcessModel.php",
+		"/var/www/erequest/scripts/js/fuel-lubricant.min.js",
+		"/var/www/erequest/application/view/error/forbidden.php",
+		"/var/www/erequest/application/view/user/hiddeninfo.php",
+		"/var/www/erequest/config/database.ini",
+		"/var/www/erequest/application/controller/SalesAgent.php",
+		"/var/www/erequest/application/controller/AccountableForms.php",
+		"/var/www/erequest/application/controller/Schedule.php",
+		"/var/www/erequest/application/controller/Termination.php",
+		"/var/www/erequest/application/controller/Document.php",
+		"/var/www/erequest/application/controller/RepairMaintenance.php",
+		"/var/www/erequest/helper/directory_helper.php",
+		"/var/www/erequest/helper/output_sanitizer.php",
+		"/var/www/erequest/application/view/request/generic_view.php",
+		"/var/www/erequest/core/Loader.php",
+		"/var/www/erequest/application/model/MenuModel.php",
+		"/var/www/erequest/scripts/js/r_and_m_admin2.js",
+		"/var/www/erequest/scripts/js/r_and_m_admin1.js",
+		"/var/www/erequest/core/Model.php",
+		"/var/www/erequest/styles/ui-style.css",
+		"/var/www/erequest/application/view/request/pre-termination.php",
+		"/var/www/erequest/application/view/request/reschedule.php",
+		"/var/www/erequest/application/view/request/maintenance.php",
+		"/var/www/erequest/application/view/user/login.php",
+		"/var/www/erequest/styles/login-style.css",
+		"/var/www/erequest/application/controller/DefaultPage.php",
+		"/var/www/erequest/scripts/ajax/User.php",
+		"/var/www/erequest/application/view/template/footer.php",
+		"/var/www/erequest/application/controller/Default.php",
+		"/var/www/erequest/application/controller/FrontController.php",
+		"/var/www/erequest/application/controller/ActionController.php",
+		"/var/www/erequest/application/controller/Controller.php",
+		"/var/www/erequest/application/controller/request/RequestController.php",
+		"/var/www/erequest/constants.php",
+		"/var/www/erequest/loader/Loader.php",
+		"/var/www/erequest/application/controller/Loader.php",
+		"/var/www/erequest/application/controller/maintenance/MaintenanceController.php",
+		"/var/www/erequest/library/bootstrap/css/bootstrap.css",
+		"/var/www/erequest/application/view/process/processingScreenView.php",
+		"/var/www/erequest/application/view/basetemplate.php",
+		"/var/www/erequest/application/controller/process/ProcessController.php",
+		"/var/www/erequest/application/view/process/processScreenView.php",
+		"/var/www/erequest/styles/common.css",
+		"/var/www/erequest/config/Database.php",
+		"/var/www/erequest/application/Model.php",
+		"/var/www/erequest/application/controller/default/DefaultController.php",
+		"/var/www/erequest/config.ini",
+		"/var/www/erequest/application/controller/user/UserController.php",
+		"/var/www/erequest/application/controller/logout/LogoutController.php",
+		"/var/www/erequest/application/model/BuildUIModel.php",
+		"/var/www/e_report/application/models/record.php",
+		"/var/www/e_report/application/controllers/magiclayout.php",
+		"/var/www/e_report/scripts/js/user-report.js",
+		"/var/www/e_report/application/controllers/reporttemplate.php",
+		"/var/www/e_report/application/controllers/report.php",
+		"/var/www/e_report/application/controllers/magicreport.php",
+		"/var/www/e_report/application/models/databasecredential.php",
+		"/var/www/e_report/scripts/js/systems.js",
+		"/var/www/e_report/application/models/system.php",
+		"/var/www/e_report/application/controllers/ajax.php",
+		"/var/www/e_report/application/controllers/pages.php",
+		"/var/www/e_report/application/controllers/administrator.php",
+		"/var/www/e_report/application/views/admin/systems.php",
+		"/var/www/e_report/application/controllers/user.php",
+		"/var/www/e_report/application/models/usermodel.php",
+		"/var/www/e_report/scripts/js/user-login.js",
+		"/var/www/e_report/application/models/report.php",
+		"/var/www/e_report/application/config/database.php",
+		"/var/www/e_report/application/models/templatemodel.php",
+		"/var/www/e_report/system/core/Model.php",
+		"/var/www/southlandcoop/files/templates/SLSC_PAYSLIP_TPL.xlsx",
+		"/var/www/southlandcoop/application/view/user/confirmaccountformView.php",
+		"/var/www/southlandcoop/styles/trans.css",
+		"/var/www/southlandcoop/styles/styles.css",
+		"/var/www/southlandcoop/styles/common.css",
+		"/var/www/southlandrecoded/systems/epay/application/controller/epay/EpayController.php",
+		"/var/www/southlandcoop/systems/epay/application/model/BuildUIModel.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/var/www/erequest/scripts/js",
+			"/var/www/erequest",
+			"/var/www/erequest/application/view",
+			"/var/www/e_report/application/controllers",
+			"/var/www/southlandcoop/systems/lots/application",
+			"/var/www/southlandcoop/systems/tims",
+			"/var/www/southlandcoop/systems/lots",
+			"/var/www/southlandcoop/systems/epay",
+			"/var/www/e_report/libraries"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"getgenericlookup",
+			"request_type",
+			"usermodel",
+			"remarks",
+			"//",
+			"remarks",
+			"emptyText   :'Type your remarks here..',",
+			"$request_items",
+			"$request_details",
+			"$header_details",
+			"_request_code",
+			"new_directory_path",
+			"cancel_btn",
+			"req_details_form",
+			"request_items_arr",
+			"REVIEWEDBADGENO",
+			"collectRepairMaintenanceReqDtls",
+			"collectRMItemDetails",
+			"collectRMRequestDetails",
+			"collectFuelLubeRequestDetails",
+			"['+_item_number+']",
+			"getEmployeeDetails",
+			"textfield",
+			"70",
+			"authenticateUser",
+			"store3_item_total_pric",
+			"store2_item_total_price",
+			"pci_item_total_price",
+			"store2_item_price_arr",
+			"store",
+			"store1",
+			"store2",
+			"store1",
+			"store2",
+			"_item_number_value",
+			"FL_SUTYPE",
+			"idgen",
+			"close",
+			"                        \n",
+			"getEmpFullname",
+			"type_store",
+			"action",
+			"page",
+			"position",
+			"branch_code",
+			"branch_desc",
+			"employee_name",
+			"branch_desc",
+			",",
+			"request_header_arr",
+			",",
+			"Make",
+			"branch_code",
+			"badgeno",
+			"val()",
+			"getValue('",
+			"branchdesc",
+			"branchcode",
+			"]",
+			"    [",
+			"$this->user",
+			"PAGE_DIR",
+			"                        \n",
+			"instance",
+			"$file[self::$dbkey]",
+			"()\n",
+			"    mypanel.down('toolbar').add([\n            {\n                text: 'Approved',\n                id :'forward-btn',\n                name:'approve',\n                iconCls:'approve-icon',\n                handler:function()\n                {\n                    this.findParentByType('form').getForm().submit({\n                        url:'test.php',\n                        method:'POST',\n                        params:{\n                            approve:true\n                        }\n                    })\n                }\n            },\n            {\n                text: 'Disapproved',\n                name:'disapprove',\n                iconCls:'disapprove-icon',\n                handler:function()\n                {\n                    this.findParentByType('form').getForm().submit({\n                        url:'test.php',\n                        method:'POST',\n                        params:{\n                            disapprove:true\n                        }\n                    })\n                }\n            },\n            {\n                text:'Clear',\n                iconCls:'erase2-icon',\n                handler:function()\n                {\n                    this.findParentByType('form').getForm().reset();\n                }\n            },\n            {\n                text:'Back to List',\n                id:'back-btn',\n                name:'back',\n                iconCls:'back-icon',\n                handler:function()\n                {\n                    processing_panel.show();\n                    mypanel.destroy();\n                }   \n            }\n        ]);",
+			"defaults",
+			" border:false,\n            autoHeight:true,\n            autoWidth:true,\n            id :'detail_form_panel',\n            fileUpload:true,\n            defaultType:'panel',\n            defaults: // my panel defaults\n            {\n                bodyStyle: 'padding:10px 10px 0 10px;',\n                autoWidth: true,\n                autoHeight:true,\n                frame : true,\n                border:true,\n                defaultType:'panel',\n                defaults: // defaults for form field wrapper\n                {\n                    frame       :false,\n                    border      :false,\n                    autoWidth   :true,\n                    autoHeight  :true,\n                    bodyStyle   :'background-color:transparent; padding:3px 0 3px 0;',\n                    layout      :'column',\n                    defaultType :'displayfield',\n                    defaults    :\n                    {\n                        readOnly    :false,\n                        width       :300,\n                        labelWidth  :115\n                    }\n                }\n            }",
+			");\n",
+			" // var portlet = header.ownerCt;\n                // portlet.setLoading('Loading...');\n                // Ext.defer(function() {\n                //     portlet.setLoading(false);\n                // }, 2000);",
+			"back-",
+			"$this->load->form_title",
+			"require_once",
+			"library/",
+			"loadCompleteView",
+			"loadCSS",
+			"loadJS",
+			"input",
+			"search",
+			">\n",
+			"});\n",
+			"();\n",
+			"html:'No.',\n                                        width:45",
+			"35",
+			"rec_list_columns",
+			"getRecordColumns()",
+			"getRecordListData()",
+			"generateRecordStore",
+			"initReportData()",
+			"reportgrid",
+			"report",
+			"}\n",
+			" \n",
+			"0044cc",
+			"0088cc",
+			"styles",
+			"pay_slip_details",
+			"$this->db_trans",
+			"110",
+			"images",
+			"background",
+			"header-fluid",
+			"span9",
+			"result",
+			"$ext",
+			"fetchPaySlipDetails",
+			"_error_m",
+			"_error",
+			"MODEL",
+			"CI_MODEL",
+			"user_model",
+			"report_model",
+			"templatedir",
+			"makeEmployeeSession",
+			"$_SESSION",
+			"./library/",
+			"library/",
+			"./library/",
+			"library/",
+			"config",
+			"?>\n",
+			"css",
+			"e_report",
+			"27",
+			"37",
+			"PAPERSIZE",
+			"PH"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"reason_of_request",
+			"employeemodel",
+			"",
+			"$this->request_items",
+			"$this->request_details",
+			"$this->header_details",
+			"upload_full_path",
+			"request_form",
+			"collectRepairMaintenanceDtls",
+			"collectRMItemDtls",
+			"collectRepairMaintenanceReqDtls",
+			"collectFuelLubeReqDtls",
+			"",
+			"mytextfield",
+			"65",
+			"store3_item_grand_total_price",
+			"store2_item_grand_total_price",
+			"pci_item_grand_total_price",
+			"items_grand_total_price",
+			"store2",
+			"store3",
+			"store2",
+			"store3",
+			"_item_number",
+			"SUTYPE",
+			"_item_number_value",
+			"_action",
+			"_page",
+			"requestor_position",
+			"requestor_branch_code",
+			"requestor_branch",
+			"requestor_name",
+			"= ",
+			"header_details_arr",
+			"','",
+			"getValue()",
+			"$('#",
+			"')?>\" />",
+			"<input type=\"hidden\" id=\"\" value=\"<?=userSession('",
+			"$this",
+			"APPS_DIR",
+			"connection",
+			"$db_config",
+			"$data['form_title']",
+			"include_once",
+			"libraries/",
+			"load->completeView",
+			"load->css",
+			"load->js",
+			"system_grid",
+			"33A133",
+			"008A00",
+			"$db_trans",
+			"user",
+			"report",
+			"../../library/",
+			"active_sheet",
+			"pay_slip"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 11,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "scripts/js/manpower.js",
+					"settings":
+					{
+						"buffer_size": 17659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								572,
+								572
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "scripts/js/manpower.min.js",
+					"settings":
+					{
+						"buffer_size": 7809,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7774,
+								7774
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 20.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/model/RequestModel.php",
+					"settings":
+					{
+						"buffer_size": 2112,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1197,
+								1197
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/controller/User.php",
+					"settings":
+					{
+						"buffer_size": 4677,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7,
+								7
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "application/controller/Request.php",
+					"settings":
+					{
+						"buffer_size": 4155,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								66,
+								66
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "scripts/js/request-processing.js",
+					"settings":
+					{
+						"buffer_size": 4148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								516,
+								516
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 98.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "scripts/js/common-form-functions.js",
+					"settings":
+					{
+						"buffer_size": 4908,
+						"regions":
+						{
+						},
+						"selection":
+						[
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "scripts/js/common-form-functions.min.js",
+					"settings":
+					{
+						"buffer_size": 3477,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3477,
+								3477
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 602.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "styles/application.css",
+					"settings":
+					{
+						"buffer_size": 3983,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3912,
+								3912
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2520.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "core/ActionController.php",
+					"settings":
+					{
+						"buffer_size": 3093,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2544,
+								2544
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1170.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "application/model/LookUpModel.php",
+					"settings":
+					{
+						"buffer_size": 1944,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1166,
+								1166
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 405.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "application/controller/LookUp.php",
+					"settings":
+					{
+						"buffer_size": 6220,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4497,
+								4497
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2070.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "application/controller/ErrorPage.php",
+					"settings":
+					{
+						"buffer_size": 283,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								281,
+								281
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 250.0,
+	"status_bar_visible": true
+}
